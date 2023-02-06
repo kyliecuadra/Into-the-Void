@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body {
+    font-family: 'Amatic SC', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    animation: zoom-out 1s linear;
+}
+
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(0, 0);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    vertical-align: middle;
+    width: 100%;
+    outline: none;
+    text-align: center;
+}
+
+.title {
+    font-size: 5rem;
+    animation: squiggly-anim 0.35s linear infinite;
+}
+
+.instruction {
+    font-size: 2rem;
+    animation: squiggly-anim 0.35s linear infinite;
+}
+
+.inp {
+    font-family: 'Amatic SC', sans-serif;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: #fff;
+    resize: none;
+    width: 100%;
+    text-align: justify;
+}
+
+.inp:nth-child(1){
+    border: solid 1px #fff;
+}
+
+.scream {
+    animation: zoom-in 1s linear;
+}
+
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    height: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #000;
+    border: 2px solid #666;
+    -webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    -webkit-border-radius: 16px;
+}
+
+/* SQUIGGLY ANIMATION */
+
+@-moz-keyframes squiggly-anim {
+    0% {
+        filter: url("#squiggly-0");
+    }
+
+    25% {
+        filter: url("#squiggly-1");
+    }
+
+    50% {
+        filter: url("#squiggly-2");
+    }
+
+    75% {
+        filter: url("#squiggly-3");
+    }
+
+    100% {
+        filter: url("#squiggly-4");
+    }
+}
+
+@-webkit-keyframes squiggly-anim {
+    0% {
+        filter: url("#squiggly-0");
+    }
+
+    25% {
+        filter: url("#squiggly-1");
+    }
+
+    50% {
+        filter: url("#squiggly-2");
+    }
+
+    75% {
+        filter: url("#squiggly-3");
+    }
+
+    100% {
+        filter: url("#squiggly-4");
+    }
+}
+
+@-o-keyframes squiggly-anim {
+    0% {
+        filter: url("#squiggly-0");
+    }
+
+    25% {
+        filter: url("#squiggly-1");
+    }
+
+    50% {
+        filter: url("#squiggly-2");
+    }
+
+    75% {
+        filter: url("#squiggly-3");
+    }
+
+    100% {
+        filter: url("#squiggly-4");
+    }
+}
+
+@keyframes squiggly-anim {
+    0% {
+        filter: url("#squiggly-0");
+    }
+
+    25% {
+        filter: url("#squiggly-1");
+    }
+
+    50% {
+        filter: url("#squiggly-2");
+    }
+
+    75% {
+        filter: url("#squiggly-3");
+    }
+
+    100% {
+        filter: url("#squiggly-4");
+    }
+}
